@@ -88,9 +88,9 @@ const UserProvider = ({ children }: iUserProviderProps) => {
   const listAllSectors = async (): Promise<void | iSector[]> => {
     try {
       const response = await api.get("/sectors");
-      
-      if(response.status == 200){
-        return response.data
+
+      if (response.status == 200) {
+        return response.data;
       }
     } catch (error) {
       console.log(error);
@@ -103,8 +103,8 @@ const UserProvider = ({ children }: iUserProviderProps) => {
     try {
       const response = await api.get(`/companies/${sector}`);
 
-      if(response.status == 200){
-        return response.data
+      if (response.status == 200) {
+        return response.data;
       }
     } catch (error) {
       console.log(error);
