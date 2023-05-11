@@ -7,7 +7,7 @@ const StyledButton = styled.button<StyledButtonProps>`
 
   border: 1px solid;
   font-size: var(--font-size-6);
-  font-weight: 600;
+  font-weight: var(--font-weight-3);
   cursor: pointer;
 
   :hover {
